@@ -1,0 +1,149 @@
+div#docent_wrap {
+  width:100%;
+  /* height:165%; */
+  background: #fff;
+}
+section#docent_section {
+  /* width:100%; */
+  padding: 100px 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width:1720PX;
+  height:100%;
+  display: flex;
+  align-items: flex-start;
+ 
+}
+div#docent_left_content {
+  width:50%;
+  /* padding-left:10%; */
+  box-sizing: border-box;
+  /* background:red; */
+  /* float:left; */
+  
+  position: sticky;
+  top: 0;
+  /* left: 0; */
+  
+}
+p#docent_title_01 {
+  /* padding-top:100px; */
+  box-sizing: border-box;
+  font:normal 100px "Oswald";
+
+}
+p#docent_title_02 {
+  font:700 220px/1 "Oswald";
+  margin-top:-30px;
+}
+p#docent_text {
+  width:500px;
+  height:500px;
+  /* background:pink; */
+  padding-top:150px;
+  box-sizing: border-box;
+  position:relative;
+  left:0px;
+  top:0px;
+  font:normal 21px "Noto Sans KR";
+  color:black;
+}
+p#docent_text>span {
+  font:bold 30px "Noto Sans KR";
+}
+p#docent_text::before {
+  content:"";
+  width:50%;
+  height:5px;
+  background:black;
+  position:absolute;
+  top:60px;
+}
+p#docent_text::after {
+  content:"";
+  width:50%;
+  height:5px;
+  background:black;
+  position:absolute;
+  bottom:0px;
+  left:0px;
+}
+
+div#docent_left_content>img {
+  padding-top:50px;
+  box-sizing:border-box;
+}
+
+div#docent_right_content{
+  position:relative;
+  left:0px;
+  top:0px;
+  width:50%;
+  height:100%;
+  /* float:left; */
+  /* background:pink; */
+  text-align:center;
+}
+
+div#docent_right_content>img{
+  width:230px;
+  height:345px;
+  /* padding-top:5%; */
+  box-sizing:border-box;
+  /* margin-top:80px; */
+}
+
+
+div#docent_right_content>:nth-child(2) {
+ font:bold 150px "Oswald";
+
+}
+div#docent_right_content>:nth-child(3) {
+  padding-top:80px;
+  box-sizing:border-box;
+  font:normal 14px "Noto Sans KR"
+}
+
+div#docent_right_content>p>span {
+  font:bold 30px "Oswald"
+}
+ul#docent_right_list>li {
+  margin: 120px auto;
+  width:680px;
+  /* height:300px; */
+  height:200px;
+}
+ul#docent_right_list>li>p:nth-child(1){
+  color:white;
+  font:normal 30px "Noto Sans KR";
+  position:relative;
+  padding-top:20px;
+  box-sizing: border-box;
+  text-align: left;
+  text-indent: 30px;
+}
+ul#docent_right_list>li>p:nth-child(2){
+  color:white;
+  font:normal 60px/60px "Noto Sans KR";
+  padding-top:30px;
+  box-sizing:border-box;
+}
+ul#docent_right_list>li:nth-child(1){
+  background:url(/team_project/images/culture7.jpg) no-repeat;
+  background-size: cover;
+}
+ul#docent_right_list>li:nth-child(2){
+  background:url(/team_project/images/food3.jpg) no-repeat;
+  background-size: cover;
+} 
+ul#docent_right_list>li:nth-child(3){
+  background:url(/team_project/images/culture6.jpg) no-repeat;
+  background-size: cover;
+} 
+
+
+
+
+
+
+
