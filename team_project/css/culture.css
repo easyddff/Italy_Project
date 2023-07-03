@@ -1,0 +1,220 @@
+div#culture_wrap {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+section#culture_section {
+  /* border: 1px solid #000; */
+  box-sizing: border-box;
+  height: 500vh;
+  /* background: #000; */
+}
+
+section#culture_section>div {
+  width: 100%;
+  border-radius: 50px 50px 0 0;
+  text-align: center;
+
+  position: sticky;
+  left: 0;
+
+  overflow: hidden;
+}
+
+/* section#culture_section>div>p {
+  font: bold 130px 'verdana';
+} */
+
+/* div#culture_main {
+  background: #faa;
+  top: 0px;
+  height:100vh;
+  border-radius: 0;
+}
+
+div#culture_sub01 {
+  background: #afa;
+  top: 50px;
+  height: calc( 100vh - 50px);
+}
+
+div#culture_sub02 {
+  background: #aaf;
+  top: 100px;
+  height: calc( 100vh - 100px);
+}
+
+div#culture_sub03 {
+  background: #ffa;
+  top: 150px;
+  height: calc( 100vh - 150px);
+} */
+
+div#culture_main {
+  background: #BBA9D9;
+  top: 0px;
+  height:100vh;
+  border-radius: 0 !important;
+
+  position: relative;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div#culture_sub01 {
+  background: #C8C5CE;
+  top: 50px;
+  height:100vh;
+}
+
+div#culture_sub02 {
+  background: #E3E3E3;
+  top: 100px;
+  height:100vh;
+}
+
+div#culture_sub03 {
+  background: #8D8896;
+  top: 150px;
+  height:100vh;
+}
+
+div#culture_main_textbox {
+  position: absolute;
+  top: 180px;
+  left: 0;
+
+  width: 100%;
+}
+
+div#culture_main_textbox>p {
+  font:600 40px 'Oswald';
+}
+
+div#culture_main_textbox>p:nth-child(1) {
+  font:600 24px 'Oswald';
+}
+
+p.culture_main_title {
+  font:700 300px/340px 'Playfair Display';
+  color: #fff;
+
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+p.culture_sub_title {
+  margin: 0 auto 50px;
+  width: 1720px;
+  font:700 130px/120px 'Playfair Display';
+}
+
+div.culture_img {
+  margin: 0 auto 50px;
+  width: 1720px;
+  height: 400px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+div#culture_sub01 div.culture_img {
+  background: url('/team_project/images/culture_img00.jpg') no-repeat;
+  background-size: 100%;
+  /* background-size: cover; */
+  background-position: center;
+}
+
+div#culture_sub02 div.culture_img {
+  background: url('/team_project/images/culture_img01.jpg') no-repeat;
+  background-size: 100%;
+  /* background-size: cover; */
+  background-position: center;
+}
+
+div#culture_sub03 div.culture_img {
+  background: url('/team_project/images/culture_img02.jpg') no-repeat;
+  background-size: 100%;
+  /* background-size: cover; */
+  background-position: center;
+}
+
+div.culture_sub_text {
+  display: flex;
+
+  margin: 0 auto;
+  width: 1720px;
+}
+
+div.culture_sub_text>p:first-child {
+  position: relative;
+  left: 0;
+  top: 0;
+
+  padding-right: 60px;
+  box-sizing: border-box;
+  font:500 100px/100px 'Playfair Display';
+}
+
+div.culture_sub_text>p:first-child::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -50px;
+
+  width: 2px;
+  height: 100px;
+  background: #222;
+  transform: rotate(15deg);
+}
+
+
+div.culture_sub_text>p:last-child {
+  padding-left: 30px;
+  box-sizing: border-box;
+  font:300 24px/36px 'Noto Sans KR';
+  text-align: left;
+}
+
+
+/* =========================== */
+
+/* div#culture_main {
+  background: #faa;
+  top: 0px;
+  height:100vh;
+}
+
+div#culture_sub01 {
+  background: #afa;
+  top: 0px;
+  height:100vh;
+  margin-top: 50px;
+}
+
+div#culture_sub02 {
+  background: #aaf;
+  top: 0px;
+  height:100vh;
+  margin-top: 100px;
+}
+
+div#culture_sub03 {
+  background: #ffa;
+  top: 0px;
+  height:100vh;
+  margin-top: 150px;
+} */
+
+div#test01 {
+  box-sizing: border-box;
+  height: 100vh;
+  background: rgb(106, 230, 182);
+}
