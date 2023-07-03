@@ -1,0 +1,358 @@
+div#tour_wrap{
+  width: 100%;
+  height: 100vh;
+}
+section#tour_section{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+button#tour_close{
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  z-index: 20;
+  display:none;
+}
+button#tour_close>i{
+  font-size: 50px;
+  color: white;
+}
+ul#tour_list{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+ul#tour_list>li{
+  width: 25%;
+  height: 100%;
+  /* padding: 200px 50px; */
+  box-sizing: border-box;
+  position: relative;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+ul#tour_list>li:nth-child(1){
+  background: url(/team_project/images/tour00.jpg) no-repeat;
+  background-size: cover;
+}
+ul#tour_list>li:nth-child(2){
+  background: url(/team_project/images/tour01.jpg) no-repeat;
+  background-size: cover;
+}
+ul#tour_list>li:nth-child(3){
+  background: url(/team_project/images/tour02.jpg) no-repeat;
+  background-size: cover;
+}
+ul#tour_list>li:nth-child(4){
+  background: url(/team_project/images/tour03.jpg) no-repeat;
+  background-size: cover;
+}
+
+p.fake_text{
+  font:bold 65px 'Playfair Display';
+  color: white;
+  opacity: 1;
+  position: absolute;
+  left:10%;
+  bottom:10%;
+}
+
+span.fake_text_num{
+  font:bold 72px "Playfair Display";
+  color:white;
+  opacity:0.3;
+  display:block;
+}
+
+span.fake_text_title{
+  font:normal 28px 'Playfair Display';
+  color:white;
+  opacity:1;
+  display:block;
+  padding-top:30px;
+}
+
+
+/* p.fake_text{
+  font:bold 65px 'Playfair Display';
+  color: white;
+  opacity: 1;
+  position: absolute;
+  left:10%;
+  bottom:15%
+} */
+
+div.tour_text_box{
+  width: 800px;
+  height: 550px;
+  margin-right: 70px;
+  position: absolute;
+  left: 30%;
+  /* left:10%; */
+  top: 25%;
+  opacity: 0;
+  overflow: hidden;
+  /* background: red; */
+}
+
+p.tour_title{
+  font:bold 120px 'Playfair Display';
+  color: white;
+  margin-bottom: 20px;
+}
+p.tour_subtitle{
+  font: normal 23px 'Playfair Display';
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 70px;
+}
+p.tour_text{
+  font: 400 20px/40px 'Noto Sans KR';
+  color:white;
+  margin-left: 10px;
+}
+
+div.tour_slide_wrap{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  opacity: 0;
+  /*background: red;*/
+ 
+}
+ul.tour_slide{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+ul.tour_slide>li{
+  position: absolute;
+  left: 100%;
+  top: 12%;
+  border-radius: 40px;
+  overflow: hidden;
+}
+ul.tour_slide>li:first-child{
+  /* width: 320px;
+  height: 480px; */
+  position: absolute;
+  left: 10%;
+  top: 12%;
+  /* z-index: 5; */
+  
+}
+ul.tour_slide>li:nth-child(2){
+  position: absolute;
+  left: 40%;
+  top: 12%;
+  /* z-index: 3; */
+  
+}
+
+ul.tour_slide>li>img{
+  width: 250px;
+  height: 375px;
+  
+}
+ul.tour_slide>li:first-child>img{
+  
+  border-radius: 40px;
+}
+p.tour_text_in{
+  width: 100%;
+  height: 20px;
+  font: 500 15px/20px "Playfair Display";
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+div.tour_dot_wrap{
+  width: 170px;
+  height: 20px;
+  /* background: red; */
+  position: absolute;
+  left: 18%;
+  bottom: -10%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+button.tour_prev{
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+}
+button.tour_prev>i{
+  font-size: 30px;
+  color: white;
+}
+button.tour_next{
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+}
+button.tour_next>i{
+  font-size: 30px;
+  color: white;
+}
+button.tour_auto{
+  width: 20px;
+  height: 20px;
+  background: none;
+  border:none
+}
+button.tour_auto>i{
+  font-size: 30px;
+  color: white;
+}
+/* button.tour_auto.selected{
+  width: 20px;
+  height: 20px;
+  background-color: brown;
+} */
+
+
+/* 모달창 */
+
+div#modal_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+  padding: 0 100px;
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+
+  /* display: flex; */
+  display: none;
+  align-items: center;
+}
+
+div#modal_img {
+  flex-shrink: 0;
+  margin-right: 150px;
+  width: 320px;
+  height: 480px;
+
+  border-radius: 40px;
+  background: #faf;
+  overflow: hidden;
+}
+
+div#modal_img>img {
+  width: 100%;
+}
+
+div#modal_text {
+  width: 100%;
+  height: 480px;
+}
+
+p#data_title {
+  position: relative;
+  left: 0;
+  top: 0;
+
+  margin-bottom: 50px;
+
+  font:700 60px/120px 'Playfair Display';
+  color: #fff;
+}
+
+p#data_title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 300px;
+  height: 2px;
+  background: #fff;
+}
+
+p#data_text {
+  font:300 20px/40px 'Noto Sans KR';
+  color: rgba(255, 255, 255, 0.7);
+}
+
+button#modal_close {
+  position: absolute;
+  top: 140px;
+  right: 100px;
+
+  width: 50px;
+  height: 50px;
+  background: #D9D9D9;
+  border-radius: 50%;
+  border: none;
+
+  font-size: 23px;
+}
+
+
+/*  */
+div#architecture_start{
+  position: relative;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+  background: #8F7A94;
+  text-align: center;
+}
+
+div#architecture_start_text {
+  position: absolute;
+  top: 180px;
+  left: 0;
+
+  width: 100%;
+}
+
+div#architecture_start_text>p {
+  font:600 40px 'Oswald';
+  color: #fff;
+}
+
+div#architecture_start_text>p:nth-child(1) {
+  font:600 24px 'Oswald';
+}
+
+p.architecture_start_title {
+  font:700 235px/350px 'Playfair Display';
+  color: #fff;
+
+  position: relative;
+  top: 0;
+  left: 0;
+}
