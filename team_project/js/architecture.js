@@ -13,7 +13,6 @@ function archiStart(){
     duration:0.2,
     scrollTrigger:{
       trigger: '#architecture_start',
-      // markers:true,
       start:'top 0%',
       end:'bottom 0%',
       scrub:1,
@@ -34,7 +33,6 @@ function tour(){
 
   init()
   tourEvent()
-  // tourInEvent()
   function init(){
     gsap.set(tourSlide,{display:'none'})
   }
@@ -50,7 +48,6 @@ function tour(){
   function tourMenu(){
     let clickIndex=getIndex(this);
     tourOpen(clickIndex);
-    // closeTourMenu(clickIndex);
   }
 
 
@@ -92,97 +89,6 @@ function tour(){
 
 }
 
-// function modalShow(){
-//   const tourSection = document.querySelector('#tour_section');
-//   const modalWrap = document.createElement('div');
-//   modalWrap.id = 'modal_wrap';
-//   modalWrap.innerHTML = `<div id="modal_img"><img src="#"></div>
-//                           <div id="modal_text"></div>
-//                           <button id="modal_close">x</button>`
-//   tourSection.append(modalWrap)
-
-//   const modalImg = document.querySelector('#modal_img').children[0]
-//   const modalClose = document.querySelector('#modal_close');
-
-//   const testWrap1 = document.querySelector('#test_wrap1').children[0];
-//   const testWrap2 = document.querySelector('#test_wrap2').children[0];
-//   const testWrap3 = document.querySelector('#test_wrap3').children[0];
-//   const testWrap4 = document.querySelector('#test_wrap4').children[0];
-//   const testWrapLi01 = testWrap1.children;
-//   const testWrapLi02 = testWrap2.children;
-//   const testWrapLi03 = testWrap3.children;
-//   const testWrapLi04 = testWrap4.children;
-//   let clickIndex = null;
-
-//   clickEffect();
-
-
-//   function clickEffect(){
-//     for(item of testWrapLi01){
-//       item.addEventListener('click', clickOpen01);
-//     }
-  
-//     for(item of testWrapLi02){
-//       item.addEventListener('click', clickOpen02);
-//     }
-  
-//     for(item of testWrapLi03){
-//       item.addEventListener('click', clickOpen03);
-//     }
-  
-//     for(item of testWrapLi04){
-//       item.addEventListener('click', clickOpen04);
-//     }
-
-//     modalClose.addEventListener('click', closeBtn);
-//   }
-
-//   function clickOpen01(){
-//     clickIndex = getIndex(this);
-//     // console.log(clickIndex)
-//     modalOpen(clickIndex);
-//   }
-
-//   function clickOpen02(){
-//     clickIndex = getIndex(this);
-//     // console.log(clickIndex)
-//   }
-
-//   function clickOpen03(){
-//     clickIndex = getIndex(this);
-//     // console.log(clickIndex)
-//   }
-
-//   function clickOpen04(){
-//     clickIndex = getIndex(this);
-//     // console.log(clickIndex)
-//   }
-
-
-//   function getIndex(checkMenu){
-//     let selectedIndex = 0;
-//     while((checkMenu=checkMenu.previousElementSibling) != null){
-//       selectedIndex++;
-//     }
-
-//     return selectedIndex;
-//   }
-
-//   function modalOpen(index){
-//     gsap.set('#modal_wrap',{display:'flex'})
-//     console.log(index)
-//     console.log(testWrapLi01[index])
-//   }
-
-//   function closeBtn(){
-//     gsap.set('#modal_wrap',{display:'none'})
-//   }
-// }
-
-
-
-
-
 // =====================================================================
 
 
@@ -191,10 +97,6 @@ class TestSlide{
     this.tourInSlideWrapName = document.querySelector(selectTest);
 
     this.textData = selectTest.substr(1);
-    // console.log(selectTest.substr(1))
-    // console.log(this.textData)
-
-    //axios.get(`${}/data${clickIndex}.html`)
     
     this.tourInWrap = this.tourInSlideWrapName;
     this.tourInSlide = this.tourInSlideWrapName.children[0];
@@ -205,14 +107,10 @@ class TestSlide{
     this.tourInNext = this.tourInDotWrap.children[2];
     this.tourInAuto = this.tourInDotWrap.children[1];
     
-    // this.selectedDot = this.tourInDotLi[0];
     this.slideWidth = this.tourInSlide.offsetWidth;
     this.timer=null;
     this.isStop=false;
     this.isSlide=false;
-    
-    // this.currentIndex = 0;
-    // this.clickIndex = null;//이게 nextIndex
 
     this.currentX=[10+'%', 40+'%', 100+'%',-250 ];
     this.a=0;
@@ -230,8 +128,6 @@ class TestSlide{
 
     this.tourInNextSlide();
     this.tourInPrevSlide();
-    //this.autoPlay();
-    // this.modalSlidePlay();
     this.tourShow();
   }
 // ===
@@ -260,9 +156,9 @@ class TestSlide{
   }
 
   
-  tourShowText(index){
+  tourShowText(){
     const grayLayer=document.createElement('div');
-    const overLayer=document.createElement('div');
+    // const overLayer=document.createElement('div');
 
     grayLayer.id='grayLayer';
     grayLayer.style.display='block';
@@ -385,12 +281,6 @@ class TestSlide{
   }
 
   tourInNextSlide(){
-    // let currentX=[10+'%', 40+'%', 100+'%',-250 ]
-    // let a=0
-    // let b=1
-    // let c=2
-    // let d=3
-
     this.tourInNext.addEventListener('click',()=>{
       this.a=this.a-1
       if(this.a<=-1){
@@ -464,11 +354,6 @@ class TestSlide{
 
 
   tourInPrevSlide(){
-    // let currentX=[10+'%', 40+'%', 100+'%',-250 ]
-    // let a=0
-    // let b=1
-    // let c=2
-    // let d=3
     this.tourInPrev.addEventListener('click',()=>{
       console.log('test')
       this.a=this.a+1
@@ -486,8 +371,6 @@ class TestSlide{
         gsap.to(this.tourInSlideLi[0],{opacity:0})
       }
       gsap.to(this.tourInSlideLi[0],{left:this.currentX[this.a]})
-      // console.log(this.tourInSlideLi[0])
-
 
       this.b=this.b+1
       if(this.b>=4){
@@ -541,115 +424,6 @@ class TestSlide{
     })
   }
 
-
-  // nextVisualSlide(index){
-  
-  //   // gsap.to(this.tourInSlideLi[this.currentIndex],{
-  //   //   left:-250,
-  //   //   zIndex:3,
-  //   //   scale:1,
-  //   //   opacity:0
-  //   // })
-
-  //   // gsap.set(this.tourInSlideLi[index],{
-  //   //   left:40+'%',
-  //   //   zIndex:3,
-  //   //   opacity:1
-  //   // })
-
-  //   // gsap.to(this.tourInSlideLi[index],{
-  //   //   left:10+'%',
-  //   //   zIndex:5,
-  //   //   scale:1.3
-  //   // })
-
-  //   // gsap.set(this.tourInSlideLi[index+1],{
-  //   //   left:this.slideWidth,
-  //   //   zIndex:3
-  //   // })
-  //   // gsap.to(this.tourInSlideLi[index+1],{
-  //   //   left:40+'%',
-  //   //   zIndex:3,
-  //   //   opacity:1
-  //   // })
-
-  //   // if(index>=this.tourInDotLi.length-1){
-  //   //   gsap.set(this.tourInSlideLi[0],{
-  //   //     left:this.slideWidth,
-  //   //     zIndex:3,
-  //   //     opacity:0
-  //   //   })
-  //   //   gsap.to(this.tourInSlideLi[0],{
-  //   //     left:40+'%',
-  //   //     zIndex:3,
-  //   //     opacity:1
-  //   //   })
-
-  //   //   console.log(this.tourInSlideLi[0])
-  //   // }
-
-  //   // this.currentIndex = index;
-  // }
-
-
-
-
-  // prevVisualSlide(index){
-  //   gsap.to(this.tourInSlideLi[this.currentIndex],{
-  //     left:40+'%',
-  //     zIndex:3,
-  //     scale:1
-  //   })
-
-  //   gsap.set(this.tourInSlideLi[index],{
-  //     left:-250,
-  //     zIndex:3,
-  //     opacity:0
-  //   })
-
-  //   gsap.to(this.tourInSlideLi[index],{
-  //     left:10+'%',
-  //     zIndex:5,
-  //     scale:1.3,
-  //     opacity:1
-  //   })
-
-  //   gsap.set(this.tourInSlideLi[index-1],{
-  //     left:40+'%',
-  //     zIndex:3,
-  //     scale:1,
-  //     opacity:1
-  //   })
-  //   gsap.to(this.tourInSlideLi[index-1],{
-  //     left:this.slideWidth,
-  //     zIndex:3,
-  //     opacity:0
-  //   })
-  //   // gsap.to(this.tourInSlideLi[index+2],{
-  //   //   left:this.slideWidth,
-  //   //   zIndex:3,
-  //   //   opacity:0
-  //   // })
-
-  //   if(index<=0){
-  //     gsap.set(this.tourInSlideLi[this.tourInDotLi.length],{
-  //       left:-250,
-  //       zIndex:5,
-  //       scale:1,
-  //       opacity:0
-  //     })
-  //     gsap.to(this.tourInSlideLi[this.tourInDotLi.length],{
-  //       left:10+'%',
-  //       zIndex:5,
-  //       scale:1.3,
-  //       opacity:1
-  //     })
-
-  //     console.log(this.tourInSlideLi[0])
-  //   }
-
-  //   this.currentIndex = index;
-  // }
 }
 
 
