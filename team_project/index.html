@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팀프로젝트</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'/>
+
+  <link rel="stylesheet" href="/team_project/css/reset.css">
+  <link rel="stylesheet" href="/team_project/css/common.css">
+  <link rel="stylesheet" href="/team_project/css/main.css">
+  <link rel="stylesheet" href="/team_project/css/intro.css">
+  <link rel="stylesheet" href="/team_project/css/docent.css">
+  <link rel="stylesheet" href="/team_project/css/culture.css">
+  <link rel="stylesheet" href="/team_project/css/food.css">
+  <link rel="stylesheet" href="/team_project/css/architecture.css">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js' integrity='sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q==' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js'></script>
+
+  <script src="/team_project/js/main.js"></script>
+  <script src="/team_project/js/intro.js"></script>
+  <script src="/team_project/js/docent.js"></script>
+  <script src="/team_project/js/culture.js"></script>
+  <script src="/team_project/js/food.js"></script>
+  <script src="/team_project/js/architecture.js"></script>
+</head>
+
+<body>
+  <!-- =============== intro 시작 =============== -->
+  <div id="side_menu">
+    <p>MENU</p>
+    <ul id="side_menu_list">
+      <li>
+        <a href="#">Top</a>
+      </li>
+      
+      <li>
+        <a href="#">Culture</a>
+      </li>
+
+      <li>
+        <a href="#">Food</a>
+      </li>
+
+      <li>
+        <a href="#">Architecture</a>
+      </li>
+    </ul>
+  </div>
+  <div id="main_title_wrap" class="move_menu_00">
+    <section id="main_title_section">
+      <h2 class="hidden">intro 컨텐츠</h2>
+      <div id="title_position">
+        <p id="national_flag"><img src="/team_project/images/이탈리아 국기 3.png"></p> <!--추가됨-->
+        <p id="sub_title"></p>
+
+        <div id="title_box">
+
+          <video id="title_video" autoplay loop muted>
+            <!-- <source src="/team_project/video/milan_-_35259 (1080p).mp4" type="video/mp4"> -->
+            <source src="/team_project/video/italia02.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div id="rolling"> <!--추가됨-->
+        <ul id="rolling_list_01" class="rolling_text">
+          <li>SANTA MARIA</li>
+          <li>AMALFI</li>
+          <li>COLOSEUM</li>
+          <li>NAPOLI</li>
+          <li>PARMA</li>
+          <li>ROME</li>
+        </ul>
+        <ul id="rolling_list_02" class="rolling_text"> <!--추가됨-->
+          <li>SANTA MARIA</li>
+          <li>AMALFI</li>
+          <li>COLOSEUM</li>
+          <li>NAPOLI</li>
+          <li>PARMA</li>
+          <li>ROME</li>
+        </ul>
+      </div>
+
+
+    </section>
+  </div>
+  <!-- =============== intro 끝 =============== -->
+
+  <!-- =============== docent 시작 =============== -->
+  <div id="docent_wrap">
+    <section id="docent_section">
+      <h2 class="hidden">docent 컨텐츠</h2>
+
+      <div id="docent_left_content">
+        <p id="docent_title_01">GUIDE</p>
+        <p id="docent_title_02">DOCENT</p>
+        <!-- <img src="/team_project/images/docent_img1.png" alt="이미지정보"> -->
+        <p id="docent_text">
+          <span>Travel comment</span><br>서구문명의 뿌리, 로마제국을 품은 유럽 남쪽의 나라 이탈리아는
+                유럽을 처음 여행하는 당신에게  다른 나라에서는 볼 수 없는 최고의
+                경험을 선사할 것입니다. 이탈리아는 따스한 지중해의 기후와, 
+                다양하고 특색있는 음식, 유럽 어느 국가에 가도 볼 수 없는 수많은 
+                유적지와 관광지가 있으며,  다른 어느 국가에서도 경험해 보지 못한
+                신선한 경험을 할 수 있습니다.
+        </p>
+      </div>
+      
+      <div id="docent_right_content">
+        <img src="/team_project/images/docent_img2.png" alt="이미지정보">
+
+        <p>ITALY</p>  
+
+
+        <ul id="docent_right_list">
+          <!-- 1 -->
+          <li>
+            <p class="docent_chapter_num">Chapter 1</p>
+                  
+            <p class="docent_chapter_title">CULTURE</p>
+          </li>
+          <!-- 2 -->
+          <li>
+            <p class="docent_chapter_num">Chapter 2</p>            
+            <p class="docent_chapter_title">FOOD</p>
+          </li>
+          <!-- 3 -->
+          <li>
+            <p class="docent_chapter_num">Chapter 3</p>          
+            <p class="docent_chapter_title">ARCHITEURE</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <!-- =============== docent 끝 =============== -->
+
+  <!-- =============== CULTURE 컨텐츠 =============== -->
+  <div id="culture_wrap" class="move_menu_01">
+    <section id="culture_section">
+      <h2 class="hidden">culture 컨텐츠</h2>
+      <div id="culture_main" class="test_culture">
+        <div id="culture_main_textbox">
+          <p>Chapter One</p>
+          <p>CULUTRE</p>
+          <p>(1)</p>
+        </div>
+        <p class="culture_main_title">CULTURE</p>
+      </div>
+
+      <div id="culture_sub01" class="test_culture">
+        <p class="culture_sub_title">NORTH ITALY</p>
+        <div class="culture_img"></div>
+        <div class="culture_sub_text">
+          <p>INFO</p>
+          <p>북부는 중세 시절부터 상업의 발달 제조업의 중심지로발전된 문화와 건축물이 다수 분포 되어있으며, 알프스라는 최고의 관광지와 맞붙어 있습니다.북부는 중세 시절부터 상업의 발달 제조업의 중심지로발전된 문화와 건축물이 다수 분포 되어있으며, 알프스라는 최고의 관광지와 맞붙어 있습니다.</p>
+        </div>
+      </div>
+
+      <div id="culture_sub02" class="test_culture">
+        <p class="culture_sub_title">CENTRIAL ITALY</p>
+        <div class="culture_img"></div>
+        <div class="culture_sub_text">
+          <p>INFO</p>
+          <p>북부는 중세 시절부터 상업의 발달 제조업의 중심지로발전된 문화와 건축물이 다수 분포 되어있으며, 알프스라는 최고의 관광지와 맞붙어 있습니다.북부는 중세 시절부터 상업의 발달 제조업의 중심지로발전된 문화와 건축물이 다수 분포 되어있으며, 알프스라는 최고의 관광지와 맞붙어 있습니다.</p>
+        </div>
+      </div>
+
+      <div id="culture_sub03" class="test_culture">
+        <p class="culture_sub_title">SOUTH ITALY</p>
+        <div class="culture_img"></div>
+        <div class="culture_sub_text">
+          <p>INFO</p>
+          <p>북부는 중세 시절부터 상업의 발달 제조업의 중심지로발전된 문화와 건축물이 다수 분포 되어있으며, 알프스라는 최고의 관광지와 맞붙어 있습니다.북부는 중세 시절부터 상업의 발달 제조업의 중심지로발전된 문화와 건축물이 다수 분포 되어있으며, 알프스라는 최고의 관광지와 맞붙어 있습니다.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- =============== CULTURE 컨텐츠 끝 =============== -->
+
+  <!-- =============== FOOD 컨텐츠 시작 =============== -->
+  <div id="food_horizon_wrap" class="move_menu_02">
+    <div id="food_main_textbox">
+      <p>Chapter Two</p>
+      <p>FOOD</p>
+      <p>(2)</p>
+    </div>
+
+    <div id="food_horizon_01">
+      <p class="food_main_title">FOOD</p>
+    </div>
+
+    <div id="food_horizon_02">
+      <p class="food_main_title">FOOD</p>
+    </div>
+
+    <div id="food_info_wrap">
+      <p class="food_info_text_01">FOOD</p>
+      <p class="food_info_text_02">이탈리아인들은 요리에 대한 자부심이 매우 강하며, 또한 음식하면 빠질 수 없는 나라로 유명하다</p>
+      <p class="food_info_text_03">Ristorante / Trattoria</p>
+      <p class="food_info_text_04">COURSE</p>
+    </div>
+  </div>
+
+  <div id="food_scroll_hidden">
+    <div id="food_scroll_wrap">
+      <ul id="food_scroll_list">
+        <!-- 01 -->
+        <li>
+          <div class="food_card_left">
+            <p class="food_left_title">Antipasto</p>
+            <p class="food_left_text">- 전채/냉채</p>
+            <p class="food_left_text">정식 이탈리아 식사의 전통적인 첫 번째 코스음식. 일반적으로 한 입 크기의 작은 부분으로 만들어지고
+              모든 사람이 스스로 서빙하는 플래터에 제공되는 안티파스토의 목적은 식욕을 자극하는 것. 익히지 않은 음식이나 스프가 주로 나오는 식전 음식</p>
+          </div>
+  
+          <ul class="food_card_right">
+            <li>
+              <p class="food_name">폴렌타</p>
+              <img src="/team_project/images/food_00.jpg" alt="이미지설명">
+              <p class="food_explain">거칠게 빻은 곡물을 물에 불린 다음 끓인 것으로 고대 로마시대 때부터 먹어온 음식</p>
+            </li>
+  
+            <li>
+              <p class="food_name">치아바타</p>
+              <img src="/team_project/images/food_01.jpg" alt="이미지설명">
+              <p class="food_explain">밀가루, 물, 이스트로 반죽해서 만든 버터나 우유, 달걀이 들어가지 않는 이탈리아식 샌드위치 빵</p>
+            </li>
+          </ul>
+        </li>
+        <!-- 02 -->
+        <li>
+          <div class="food_card_left">
+            <p class="food_left_title">Primo Piatto</p>
+            <p class="food_left_text">- 메인 요리</p>
+            <p class="food_left_text">첫 번째 접시라는 의미로 파스타, 리조또 등으로 구성된 메인요리, 리조또는 이탈리아의 전통 요이로서 해당 지역의 쌀을
+              이용하여 만드는 여러 음식 가운데 하나. 점심의 한씨 식사로도 이용</p>
+          </div>
+  
+          <ul class="food_card_right">
+            <li>
+              <p class="food_name">봉골레 파스타</p>
+              <img src="/team_project/images/food_02.jpg" alt="이미지설명">
+              <p class="food_explain">나폴리와 베네치아에서 만들어 먹던 음식으로 모시조개를 넣어 만든 파스타</p>
+            </li>
+  
+            <li>
+              <p class="food_name">오소부코</p>
+              <img src="/team_project/images/food_03.jpg" alt="이미지설명">
+              <p class="food_explain">소 정강이살을 고기소스에 푹 익혀서 만든 찜으로 리조또나 으깬 감자와 함께 나온 음식</p>
+            </li>
+          </ul>
+        </li>
+        <!-- 03 -->
+        <li>
+          <div class="food_card_left">
+            <p class="food_left_title">Secondo Piatto</p>
+            <p class="food_left_text">- 메인 요리</p>
+            <p class="food_left_text">두 번째 접시라는 뜻으로 메인메뉴를 말함, 고기나 생선으로 구성된 요리이며
+              제공되는 양이나 다른 지역 관습에 따라 일부 요리는 두 번째 코스나 에피타이저로 사용할 수 있음</p>
+          </div>
+  
+          <ul class="food_card_right">
+            <li>
+              <p class="food_name">칼라마리 리페니</p>
+              <img src="/team_project/images/food_04.jpg" alt="이미지설명">
+              <p class="food_explain">각종 채소와 해산물을갈아 토마토 소스를 곁들어 먹는 이탈리아식 오징어순대</p>
+            </li>
+  
+            <li>
+              <p class="food_name">폴로 알라 카차토라</p>
+              <img src="/team_project/images/food_05.jpg" alt="이미지설명">
+              <p class="food_explain">토마토 소스에 닭고기를 넣고 토마토로 만든 스튜에 닭을 넣어 만든 이탈리아식 닭요리</p>
+            </li>
+          </ul>
+        </li>
+        <!-- 04 -->
+        <li>
+          <div class="food_card_left">
+            <p class="food_left_title">Dolce</p>
+            <p class="food_left_text">- 후식</p>
+            <p class="food_left_text">점심 또는 저녁 식사를 마무리하는 달달한 후식을 의미하며, 평소알던 디저트보다는 스위트에 가까운 음식이며 돌체는 생과일과 익힌 과일, 이탈리아식 아이스크림인 젤라또, 셔벗, 푸딩, 초콜릿, 타르트와 다양한 케이크 등 그 범위가 넓고 종류가 많음</p>
+          </div>
+  
+          <ul class="food_card_right">
+            <li>
+              <p class="food_name">카놀리</p>
+              <img src="/team_project/images/food_06.jpg" alt="이미지설명">
+              <p class="food_explain">기름에 튀긴 밀가루 반죽에 리코타 치즈로 만든 속을 채워넣고 말아 만든 음식</p>
+            </li>
+  
+            <li>
+              <p class="food_name">젤라토</p>
+              <img src="/team_project/images/food_07.jpg" alt="이미지설명">
+              <p class="food_explain">일반적인 아이스크림에 비해 유지방 함량이 낮은 이탈리아식 아이스크림</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- =============== FOOD 컨텐츠 끝 =============== -->
+
+  <!-- =============== architecture 시작 =============== -->
+  <div id="architecture_start" class="move_menu_03">
+    <div id="architecture_start_text">
+      <p>Capter Three</p>
+      <p>ARCHITETURE</p>
+      <p>(3)</p>
+    </div>
+    <p class="architecture_start_title">ARCHITETURE</p>
+  </div>
+
+  <div id="tour_wrap">
+    <section id="tour_section">
+      <h2 class="hidden">architecture 컨텐츠</h2>
+      <ul id="tour_list">
+        <!-- 복사할 li 01 -->
+        <li>
+          <p class="fake_text">
+            <span class="fake_text_num">The</span>
+            FIRENZE
+            <span class=fake_text_title>Renaissance Art City</span>
+          </p>
+
+          <div class="tour_text_box">
+            <p class="tour_title">FIRENZE</p>
+            <p class="tour_subtitle">CITY OF RENAISSANCE</p>
+            <p class="tour_text">
+              토스카나의 최대 도시이자 중심도시이며 중세, 르네상스 시대에 건축과 예술로 유명하며, 
+              <br>무역과 금융의 중심지로도 잘 알려져 있다. 또한, 1982년에 도시 전체가 
+              <br>유네스코 세계유산으로 등재되었다. 메디치 가문의 본거지였으며, 메디치 가문의
+              <br>후원으로 지은 여러 미술관과 유산들은 매년 수백만이 넘는 관광객을 끌어들이고 있다.
+            </p>
+          </div>
+
+          <div id=test_wrap1 class="tour_slide_wrap">
+            <ul class="tour_slide">
+              <li>
+                <p class="tour_text_in">Capelle Medici</p>
+                <img src="/team_project/images/firenze00.jpg" alt="피렌체1"></img>
+              </li>
+              <li>
+                <p class="tour_text_in">Ponte Vecchio</p>
+                <img src="/team_project/images/firenze01.jpg" alt="피렌체1"></img>
+              </li>
+              <li>
+                <p class="tour_text_in">Pitti Palace Gardens</p>
+                <img src="/team_project/images/firenze02.jpg" alt="피렌체1"></img>
+              </li>
+              <li>
+                <p class="tour_text_in">Florence Cathedral Dome</p>
+                <img src="/team_project/images/firenze03.jpg" alt="피렌체1"></img>
+              </li>
+            </ul>
+            <div class="tour_dot_wrap">
+              <button class="tour_prev">
+                <i class="fa-solid fa-play fa-rotate-180"></i>
+              </button>
+              <button class="tour_auto">
+                <i class="fa-solid fa-pause"></i>
+              </button>
+              <button class="tour_next">
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <!-- ===========임시=============== -->
+        <li>
+          <p class="fake_text">
+            <span class="fake_text_num">The</span>
+            VENEZIA
+            <span class=fake_text_title>Water And Gondola City</span>
+          </p>
+
+          <div class="tour_text_box">
+            <p class="tour_title">VENEZIA</p>
+            <p class="tour_subtitle">CITY OF WATER</p>
+            <p class="tour_text">
+              베네토의 중심도시로 흔히 베니스로 불리기도 한다. 구도심 전체에 수로가 뚫려 배를 타고 
+              <br>이동해서 물의 도시로 유명하며, 현재도 베네치아 구도심 내부에는 자동차 도로가 하나도 없다.
+              <br>물길을 따라 이동하는 곤돌라는 베네치아의 상징이며, 베네치아는 이와같이 일컬어 진다.
+              <br>“그림으로 표현하기에는 이 도시는 너무나 아름답다” -클로드모네
+            </p>
+          </div>
+
+          <div id=test_wrap2 class="tour_slide_wrap">
+            <ul class="tour_slide">
+              <li>
+                <p class="tour_text_in">St.mary's Della Basilica</p>
+                <img src="/team_project/images/venezia_00.jpg" alt="베네치아1"></img>
+              </li>
+              <li>
+                <p class="tour_text_in">Rialto Bridge</p>
+                <img src="/team_project/images/venezia_01.jpg" alt="베네치아2"></img>
+              </li>
+              <li>
+                <p class="tour_text_in">Ponte dei Sospiri</p>
+                <img src="/team_project/images/venezia_02.jpg" alt="베네치아3"></img>
+              </li>
+              <li>
+                <p class="tour_text_in">St.Mark's Basilica</p>
+                <img src="/team_project/images/venezia_03.jpg" alt="베네치아4"></img>
+              </li>
+            </ul>
+            <div class="tour_dot_wrap">
+              <button class="tour_prev">
+                <i class="fa-solid fa-play fa-rotate-180"></i>
+              </button>
+              <button class="tour_auto">
+                <i class="fa-solid fa-pause"></i>
+              </button>
+              <button class="tour_next">
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <!-- ===========임시=============== -->
+        <li>
+          <p class="fake_text">
+            <span class="fake_text_num">The</span>
+            ROME
+            <span class=fake_text_title>Ancient History City</span>
+          </p>
+
+          <div class="tour_text_box">
+            <p class="tour_title">ROME</p>
+            <p class="tour_subtitle">CITY OF ANCIENT HISTORY</p>
+            <p class="tour_text">
+              과거 로마 제국의 수도이자 유럽의 중심, 세계의 수도로 불렸으며, 현재 이탈리아의 수도로 
+              <br>세계 역사와 문화를 논할 때 반드시 거론되는 도시이다. 세계문화유산과 예술,
+              <br>낭만의 중심 도시이며, 가톨릭의 중심지인 바티칸이 위치해 있다. 역사적으로 유서 깊은
+              <br>지역은 길거리가 좁은 편이며, 지중해성 기후의 영향으로 여름에는 고온건조하다.
+            </p>
+          </div>
+
+          <div id=test_wrap3 class="tour_slide_wrap">
+            <ul class="tour_slide">
+              <li>
+                <p class="tour_text_in">Trevi Fountain</p>
+                <img src="/team_project/images/rome_00.jpg" alt="로마1"></img>
+              </li>
+              <li>
+                <p class="tour_text_in">Baldachin by Bernini</p>
+                <img src="/team_project/images/rome_01.jpg" alt="로마2"></img>
+              </li>
+              <li>
+                <p class="tour_text_in">Rome Pantheon</p>
+                <img src="/team_project/images/rome_02.jpg" alt="로마3"></img>
+              </li>
+              <li>
+                <p class="tour_text_in">St.Peter's Basilica</p>
+                <img src="/team_project/images/rome_03.jpg" alt="로마4"></img>
+              </li>
+            </ul>
+            <div class="tour_dot_wrap">
+              <button class="tour_prev">
+                <i class="fa-solid fa-play fa-rotate-180"></i>
+              </button>
+              <button class="tour_auto">
+                <i class="fa-solid fa-pause"></i>
+              </button>
+              <button class="tour_next">
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <p class="fake_text">
+            <span class="fake_text_num">The</span>
+            NAPOLI
+            <span class=fake_text_title>Beauty Of Taste City</span>
+          </p>
+          <div class="tour_text_box">
+            <p class="tour_title">NAPOLI</p>
+            <p class="tour_subtitle">CITY OF BEAUTY TASTE</p>
+            <p class="tour_text">
+              캄파니주의 남이탈리아의 중심도시로 이탈리아 제3의 도시이다. 지중해에 닿아 있는
+              <br>항구도시로 세계 3대 미항으로 불린다. 화산폭발로 멸망한 것으로 유명한 폼페이와
+              <br>가까이 붙어있으며, 이탈리아 북부와는 다른 생활양식과 문화를 가지고 있다. 의외로 
+              <br>스페인의 영향을 많이 받았으며, 이탈리아내에서도 독특하고 환상적인 풍경으로 유명하다.
+            </p>
+          </div>
+
+          <div id=test_wrap4 class="tour_slide_wrap">
+            <ul class="tour_slide">
+              <li>
+                <p class="tour_text_in">Basilica of San Francesco</p>
+                <img src="/team_project/images/napoli_00.jpg" alt="나폴리1"></img>
+              </li>
+              <li>
+                <p class="tour_text_in">Pompeii</p>
+                <img src="/team_project/images/napoli_01.jpg" alt="나폴리2"></img>
+              </li>
+              <li>
+                <p class="tour_text_in">Castel Nuovo</p>
+                <img src="/team_project/images/napoli_02.jpg" alt="나폴리3"></img>
+              </li>
+              <li>
+                <p class="tour_text_in">Cinque Terre</p>
+                <img src="/team_project/images/napoli_03.jpg" alt="나폴리4"></img>
+              </li>
+            </ul>
+            <div class="tour_dot_wrap">
+              <button class="tour_prev">
+                <i class="fa-solid fa-play fa-rotate-180"></i>
+              </button>
+              <button class="tour_auto">
+                <i class="fa-solid fa-pause"></i>
+              </button>
+              <button class="tour_next">
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+        </li>
+      </ul>
+      <button id="tour_close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div id="modal_wrap">
+        <div id="modal_img"><img src="#"></div>
+        <div id="modal_text"></div>
+        <button id="modal_close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </section>
+  </div>
+  <!-- =============== architecture 끝 =============== -->
+
+  <div id="mouse_cursor"></div>
+</body>
+
+</html>
