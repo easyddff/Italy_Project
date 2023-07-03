@@ -132,20 +132,14 @@ ul#food_scroll_list{
 }
 
 ul#food_scroll_list>li{
-  /* width:1280px; */
-  /* width:1400px; */
   width:1700px;
   height:630px;
   border:solid 1px black;
   margin:150px auto;
-  /* position:relative;
-  left:0px;
-  top:0px; */
   box-sizing: border-box;
 }
 
 div.food_card_left{
-  /* width:520px; */
   width:50%;
   height:100%;
   text-align:center;
@@ -183,14 +177,12 @@ p.food_left_title::after{
   left:50%;
   top:80px;
   margin-left: -290px;
-  /* width:400px; */
   width:580px;
   height:1px;
   background:black;
 }
 
 p.food_left_text{
-  /* width:215px; */
   width:68%;
   font:normal 24px "Noto Sans KR";
   margin:0px auto;
@@ -202,17 +194,14 @@ p.food_left_text{
 }
 
 ul.food_card_right{
-  /* width:760px; */
   width:50%;
   height:100%;
   float:left;
-  /* margin-top:80px; */
   padding-top: 80px;
   box-sizing: border-box;
 }
 
 ul.food_card_right>li{
-  /* width:380px; */
   width:50%;
   height:100%;
   float:left;
@@ -251,6 +240,5 @@ p.food_explain{
   width:280px;
   height:80px;
   font:normal 14px "Noto Sans KR";
-  /* margin-left:50px; */
   margin: 0 auto;
 }

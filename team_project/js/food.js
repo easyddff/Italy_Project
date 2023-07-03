@@ -12,28 +12,22 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   gsap.to(topTitle, {top:-60+"%", duration:3, ease:"power1.out", scrollTrigger:{
       trigger:foodWrap,
-      // markers:true,
       start:"top 0%",
       end:"bottom 0%",
       scrub:1,
-      // pin:true
   }})
 
   gsap.to(bottomTitle, {top:60+"%", duration:3, ease:"power1.out", scrollTrigger:{
       trigger:foodWrap,
-      // markers:true,
       start:"top 0%",
       end:"bottom 0%",
       scrub:1,
-      // pin:true
   }})
 
   gsap.to(infoWrap, {top:-25+"vh", duration:3, ease:"power1.out", scrollTrigger:{
       trigger:foodWrap,
-      // markers:true,
       start:"top 0%",
       end:"bottom 0%",
-      // toggleActions:"play pause",
       scrub:1,
       pin:true,
   }})
@@ -42,7 +36,6 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   gsap.to(scrollList, {x:-endX, duration:3, ease:"power1.out", scrollTrigger:{
       trigger:scrollWrap,
-      // markers:true,
       start:'top 0%',
       end:`${endX} 0%`,
       scrub:1,
